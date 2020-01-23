@@ -1,0 +1,68 @@
+
+### Get a list of products
+GET http://localhost:3000/employees
+
+
+###Create a prouct
+POST http://localhost:3000/employees
+Content-Type: application/json
+
+{
+    "firstName":"Boguslaw",
+    "lastName": "Linda",
+    "phoneNumber": 123423454
+}
+
+###Get a product by id
+GET http://localhost:3000/employees/5e27525926e587311c99824a
+
+
+###Update a product by id
+PATCH http://localhost:3000/employees/5e2a0556b9588800d8da2b13
+Content-Type: application/json
+
+{
+    "firstName":"Bonidek",
+    "lastName": "Linda",
+    "phoneNumber": 123423454
+}
+
+###Delete a product by id
+
+DELETE http://localhost:3000/employees/5e2a0023e3a6fa3ba0dbb477
+
+
+
+
+###user Check
+GET http://localhost:3000/User
+
+
+###Sign up
+POST http://localhost:3000/signup
+Content-Type: application/json
+{
+    "email": "Krzysiek@gmail.com",  
+    "password": "krzysiek1asdfasdf"
+}
+
+
+###
+GET http://localhost:3000/test?name=iMAC&price=2400
+
+###
+GET http://localhost:3000/test/623452345236
+
+###
+POST http://localhost:3000/test
+Content-Type: application/json
+
+{
+    "name":"iMacPro",
+    "price":4999
+}
+###
+POST http://localhost:3000/test
+Content-Type: application/x-www-form-urlencoded
+
+name=iMac&price=400
